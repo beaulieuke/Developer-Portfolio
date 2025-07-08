@@ -1,229 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kevin Beaulieu | Software Engineer</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-      />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Kevin Beaulieu | Front-End Developer</title>
-  </head>
-
-  <body>
-    <nav>
-        <h1>Kevin Beaulieu</h1>
-        <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
-  </nav>
-  
-
-  <section class="hero" id="about">
-    <img
-      src="icons/slack-photo.jpg" 
-      alt="Kevin Beaulieu"
-      loading="lazy"
-      class="hero-img"
-    />
-    <div class="bio animate__animated animate">
-      <h2 class="bio-title">About Me</h2>
-      <p class="bio-text">
-        Hi, I'm Kevin, and I'm currently a Software Engineer at IBM in Buffalo, NY.
-        I enjoy learning the most cutting-edge software languages, and spending time outdoors with my girlfriend.
-        I strive for excellence in everything I do! Go Bills!
-  
-        
-      </p>
-    </div>
-</section>
-
-
-<section class="more-about">
-  <h2>More About Me</h2>
-  <p> 5 years service in U.S. Marines (current)</p>
-  <p>Software Engineering at IBM (current)</p>
-  <p>2 years Equipment Engineering at GlobalFoundries (former)</p>
-  <p>A.S. SUNY Empire State College (2021)</p>
-  <p> </p>
-</section>
-
-
-<section class="skills" id="skills">
-  <h2 class="skill-header">My Top Skills</h2>
-
-  <div class="skills-wrapper">
-    <div class="first-set animate__animated animate__pulse">
-      <img
-        src="icons/icons8-html-5.webp"
-        alt=""
-        loading="lazy"
-        class="icon icon-card"
-      />
-      <img
-        src="icons/css3-icon.webp"
-        alt=""
-        loading="lazy"
-        class="icon icon-card"
-      />
-      <img
-        src="icons/jsicon.webp"
-        alt=""
-        loading="lazy"
-        class="icon icon-card"
-      />
-    </div>
-
-    <div class="second-set animate__animated animate__pulse">
-      <img
-        src="icons/bootstrapicon.png"
-        alt=""
-        loading="lazy"
-        class="icon icon-card"
-      />
-      <img
-        src="icons/reacticon.png"
-        alt=""
-        loading="lazy"
-        class="icon icon-card"
-      />
-      <img
-        src="icons/giticon.png"
-        alt=""
-        loading="lazy"
-        class="icon icon-card"
-      />
-    </div>
-  </div>
-</section>
-
-
-<section class="projects" id="projects">
-  <h2 class="projects-title">Recent Projects</h2>
-  <div class="projects-container">
-    <div class="project-container project-card">
-      <img
-        src="icons/amazon-cloness.png"
-        alt="amazon-clone"
-        loading="lazy"
-        class="project-pic"
-      />
-      <h3 class="project-title">Amazon-Clone</h3>
-      <p class="project-details">
-        Interactive Amazon shopping clone, that allows users to login, authenticate
-        email, add items to basket, checkout, and enter credit information.
-        Feautures interactive pricing, and user authentication.
-      </p>
-      <a href="https://codesandbox.io/s/ecstatic-cannon-4ek9r" target="_blank" class="project-link">Check it Out</a>
-    </div>
-  </div>
-</section>
-
-
-<section class="contact" id="contact">
-  <h2>Get In Touch With Me</h2>
-  <div class="contact-form-container">
-    <div class="contact-form">
-      <form action="https://formspree.io/f/xrgjpkql" method="POST">
-        <div class="form-control">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="sender-name"
-            placeholder="Enter Your Name"
-            class="input-field"
-            required
-          />
-        </div>
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="sender-email"
-            placeholder="Enter Your Email"
-            class="input-field"
-            required
-          />
-        </div>
-        <div class="form-control">
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            cols="60"
-            rows="10"
-            placeholder="Enter Your Message"
-            name="message"
-            class="input-field"
-            required
-          ></textarea>
-        </div>
-        <input
-          type="submit"
-          value="Submit"
-          id="submit-btn"
-          class="submit-btn"
-        />
-      </form>
-    </div>
-  </div>
-</section>
-
-
-<div class="socials">
-  <a href="https://twitter.com/beaulieuke" target="_blank"
-    ><img
-      src="icons/icons8-twitter-48.png"
-      alt="Twitter"
-      loading="lazy"
-      class="socicon"
-  /></a>
-  <a href="https://www.linkedin.com/in/beaulieuke/" target="_blank"
-    ><img
-      src="icons/icons8-linkedin-64.png"
-      alt="Linkedin"
-      loading="lazy"
-      class="socicon"
-  /></a>
-  <a href="https://github.com/beaulieuke" target="_blank"
-    ><img src="icons/icons8-github-50.png" alt="Github" class="socicon"
-  /></a>
-
-
-  <i class="scroll-up" id="scroll-up"
-  ><img
-    src="icons/icons8-upward-arrow-65.png"
-    class="socicon up-arrow"
-    alt="scroll-up"
-/></i>
-
-
-    <script src="app.js"></script>
-
-    <script 
+    <script defer src="app.js"></script>
+    <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
@@ -231,5 +19,85 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><a href="index.html">Kevin Beaulieu</a></h1>
+        <ul class="navigation">
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <img
+          src="icons/slack-photo.jpg"
+          alt="Kevin Beaulieu"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__fadeInRight">
+          <h2>About Me</h2>
+          <p>
+            Hi, I'm Kevin, a Software Engineer at IBM in Buffalo, NY. I am committed to integrity, hard work, and 
+            treating others with respect. I believe in building quality software with care and dedication, 
+            continually learning, and making a positive impact through my work. When I’m not coding, 
+            I enjoy spending time outdoors and sharing life’s moments with my wife.
+          </p>
+        </div>
+      </section>
+
+      <section class="more-about">
+        <h2>More About Me</h2>
+        <ul>
+          <li>10 years of service in the U.S. Marines (DoD Secret Clearance)</li>
+          <li>4 Years of Software Engineering at IBM (current)</li>
+          <li>2 Years of Equipment Engineering at GlobalFoundries (former)</li>
+          <li>B.S. in Computer Science SUNY Empire State University </li>
+        </ul>
+      </section>
+
+      <section class="skills" id="skills">
+        <h2>My Top Skills</h2>
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img src="icons/icons8-html-5.webp" alt="HTML" class="icon icon-card" />
+            <img src="icons/css3-icon.webp" alt="CSS" class="icon icon-card" />
+            <img src="icons/jsicon.webp" alt="JavaScript" class="icon icon-card" />
+          </div>
+          <div class="second-set animate__animated animate__pulse">
+            <img src="icons/bootstrapicon.png" alt="Bootstrap" class="icon icon-card" />
+            <img src="icons/reacticon.png" alt="React" class="icon icon-card" />
+            <img src="icons/giticon.png" alt="Git" class="icon icon-card" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="socials">
+        <a href="https://twitter.com/beaulieuke" target="_blank">
+          <img src="icons/icons8-twitter-48.png" alt="Twitter" class="socicon" />
+        </a>
+        <a href="https://www.linkedin.com/in/beaulieuke/" target="_blank">
+          <img src="icons/icons8-linkedin-64.png" alt="LinkedIn" class="socicon" />
+        </a>
+        <a href="https://github.com/beaulieuke" target="_blank">
+          <img src="icons/icons8-github-50.png" alt="GitHub" class="socicon" />
+        </a>
+      </div>
+      <div class="scroll-up" id="scroll-up">
+        <img src="icons/icons8-upward-arrow-65.png" alt="Scroll to top" class="socicon up-arrow" />
+      </div>
+      <p>&copy; 2025 Kevin Beaulieu</p>
+    </footer>
   </body>
 </html>
