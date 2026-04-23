@@ -86,6 +86,14 @@ nav ul li {
   cursor: pointer;
   display: none;
 }
+.theme-toggle {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 1rem;
+}
 .hero {
   display: flex;
   align-items: center;
@@ -284,4 +292,94 @@ footer {
 .up-arrow {
   width: 3rem;
   height: 3rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero img {
+    height: auto;
+    width: 100%;
+    max-width: 20rem;
+  }
+  .bio {
+    width: 100%;
+  }
+  nav ul.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav ul {
+    display: none;
+  }
+  .more-about {
+    padding: 1rem 2rem;
+  }
+  .skills-wrapper {
+    flex-direction: column;
+  }
+  .projects-container {
+    flex-direction: column;
+  }
+  .socials {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .scroll-up {
+    position: static;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
+
+/* Dark Mode Styles */
+.dark {
+  --bg-color: #1a1a1a;
+  --primary-color: #ffffff;
+  --secondary-color: #ff4500;
+  --primary-shadow: #333;
+  --secondary-shadow: #555;
+}
+
+.dark nav {
+  background-color: var(--bg-color);
+}
+
+.dark .bio,
+.dark .project-card,
+.dark .contact-form-container {
+  background-color: #2a2a2a;
+  color: var(--primary-color);
+}
+
+.dark .input-field {
+  background-color: #333;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.dark .input-field::placeholder {
+  color: #ccc;
+}
+
+.dark .submit-btn {
+  background-color: #2a2a2a;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.dark .submit-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
 }

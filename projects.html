@@ -6,6 +6,14 @@
     <title>Projects | Kevin Beaulieu</title>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <nav>
@@ -16,8 +24,11 @@
         <li><a href="projects.html" class="nav-link">Projects</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
-      <button class="burger-menu" id="burger-menu">
+      <button class="burger-menu" id="burger-menu" aria-label="Toggle navigation menu">
         <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <ion-icon name="moon-outline"></ion-icon>
       </button>
     </nav>
 
@@ -36,6 +47,19 @@
             Interactive Amazon shopping clone with user authentication, basket, checkout, and payment functionality.
           </p>
           <a href="https://codesandbox.io/s/ecstatic-cannon-4ek9r" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="icons/slack-photo.jpg"
+            alt="Developer Portfolio"
+            class="project-pic"
+            loading="lazy"
+          />
+          <h3 class="project-title">Developer Portfolio</h3>
+          <p class="project-details">
+            A responsive portfolio website built with HTML, CSS, and JavaScript, showcasing skills, projects, and contact information.
+          </p>
+          <a href="https://github.com/beaulieuke/Developer-Portfolio" target="_blank" class="project-link">View on GitHub</a>
         </div>
         <!-- Add more projects here as needed -->
       </div>
