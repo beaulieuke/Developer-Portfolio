@@ -4,27 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Kevin Beaulieu's portfolio: Senior Software Engineer with experience at IBM and the U.S. Marines." />
-    <title>Kevin Beaulieu</title>
+    <title>Kevin Beaulieu - Senior Software Engineer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Kevin Beaulieu</h1>
-    <img src="icons/slack-photo.jpg" alt="Kevin Beaulieu" class="profile-photo">
-    <p>Senior Software Engineer at IBM</p>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+      <h1>Kevin Beaulieu</h1>
+    </header>
 
-    <p>Building reliable systems and solving complex problems. Experience spans enterprise software, cloud infrastructure, and operational excellence.</p>
+    <main id="main-content">
+      <section class="hero">
+        <img src="icons/slack-photo.jpg" alt="Kevin Beaulieu" class="profile-photo">
+        <p class="role">Senior Software Engineer at IBM</p>
+        <p class="description">Building reliable systems and solving complex problems. Experience spans enterprise software, cloud infrastructure, and operational excellence.</p>
+      </section>
 
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">Who is Kevin Beaulieu?</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+      <nav aria-label="Main navigation">
+          <div id="burger-menu" aria-label="Toggle navigation menu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <ul>
+              <li><a href="index.html" class="active nav-link" aria-current="page">Home</a></li>
+              <li><a href="about.html" class="nav-link">Who is Kevin Beaulieu?</a></li>
+              <li><a href="projects.html" class="nav-link">My Projects</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+      </nav>
+    </main>
 
     <footer>
         <p>&copy; 2026 Kevin Beaulieu</p>
     </footer>
+    
+    <button id="scroll-up" aria-label="Scroll to top">↑</button>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <script src="app.js"></script>
   </body>
 </html>

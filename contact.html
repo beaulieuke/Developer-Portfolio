@@ -3,25 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Kevin Beaulieu</title>
+    <meta name="description" content="Contact Kevin Beaulieu: Senior Software Engineer at IBM. Connect via LinkedIn or GitHub.">
+    <title>Contact - Kevin Beaulieu - Senior Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1><a href="index.html">Kevin Beaulieu</a></h1>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <h1><a href="index.html">Kevin Beaulieu</a></h1>
+    </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
+        <div id="burger-menu" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Who is Kevin Beaulieu?</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">Who is Kevin Beaulieu?</a></li>
+            <li><a href="projects.html" class="nav-link">My Projects</a></li>
+            <li><a href="contact.html" class="active nav-link" aria-current="page">Contact</a></li>
         </ul>
     </nav>
 
-    <h2>Contact</h2>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/beaulieuke/">linkedin.com/in/beaulieuke</a></p>
-    <p>GitHub: <a href="https://github.com/beaulieuke">github.com/beaulieuke</a></p>
+    <main id="main-content">
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/beaulieuke/" target="_blank" rel="noopener noreferrer">linkedin.com/in/beaulieuke</a></p>
+                <p>GitHub: <a href="https://github.com/beaulieuke" target="_blank" rel="noopener noreferrer">github.com/beaulieuke</a></p>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send me a message</h3>
+                <form id="contact-form" action="https://formspree.io/f/xrgjpkql" method="POST" novalidate>
+                    <!-- Honeypot field for spam protection -->
+                    <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off">
+                    
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required aria-describedby="name-error">
+                        <span id="name-error" class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required aria-describedby="email-error">
+                        <span id="email-error" class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required aria-describedby="subject-error">
+                        <span id="subject-error" class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+                        <span id="message-error" class="error-message"></span>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Back to home</a></p>
+    </footer>
     
-    <p><a href="index.html">Back to home</a></p>
+    <button id="scroll-up" aria-label="Scroll to top">↑</button>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <script src="app.js"></script>
 </body>
 </html>

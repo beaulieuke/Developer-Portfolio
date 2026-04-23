@@ -3,48 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Kevin Beaulieu</title>
+    <meta name="description" content="Kevin Beaulieu's portfolio projects: Senior Software Engineer experience with enterprise systems, cloud infrastructure, and DevOps.">
+    <title>Projects - Kevin Beaulieu - Senior Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1><a href="index.html">Kevin Beaulieu</a></h1>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <h1><a href="index.html">Kevin Beaulieu</a></h1>
+    </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
+        <div id="burger-menu" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Who is Kevin Beaulieu?</a></li>
-            <li><a href="projects.html" class="active">My Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">Who is Kevin Beaulieu?</a></li>
+            <li><a href="projects.html" class="active nav-link" aria-current="page">My Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     </nav>
 
-    <h2>My Projects</h2>
+    <main id="main-content">
+        <section id="projects">
+            <h2>My Projects</h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="government">Government</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                <button class="filter-btn" data-filter="telecommunications">Telecommunications</button>
+            </div>
 
-    <h3>Project Indigo (AT&T Services Inc)</h3>
-    <p><strong>Role:</strong> Application Developer - DevSecOps</p>
-    <p>Technologies: SQL, Python, Azure, Version Control (Git), Data Analysis, Statistical Modeling, Machine Learning, A/B Testing, Predictive Modeling, Data Visualization</p>
-    <p>IBM Consulting Application Operations engagement supporting DevOps and DevSecOps enablement for enterprise telecommunications applications. Provided ongoing development, operational support, and continuous improvement for production systems.</p>
+            <div class="projects-container">
+                <article class="project" data-category="devops development telecommunications">
+                    <h3>Project Indigo (AT&T Services Inc)</h3>
+                    <p><strong>Role:</strong> Application Developer - DevSecOps</p>
+                    <p class="technologies">Technologies: SQL, Python, Azure, Version Control (Git), Data Analysis, Statistical Modeling, Machine Learning, A/B Testing, Predictive Modeling, Data Visualization</p>
+                    <p>IBM Consulting Application Operations engagement supporting DevOps and DevSecOps enablement for enterprise telecommunications applications. Provided ongoing development, operational support, and continuous improvement for production systems.</p>
+                </article>
 
-    <h3>SCDHHS Core Operations (State of South Carolina)</h3>
-    <p><strong>Role:</strong> DevOps Engineer</p>
-    <p>Technologies: Bash/Shell, Python, Terraform, Kubernetes, OracleDB, YAML, SaltStack, Splunk, Zabbix, AWS</p>
-    <p>Medicaid and Medicare Services management system focused on streamlining and improving healthcare services delivery.</p>
+                <article class="project" data-category="devops government healthcare">
+                    <h3>SCDHHS Core Operations (State of South Carolina)</h3>
+                    <p><strong>Role:</strong> DevOps Engineer</p>
+                    <p class="technologies">Technologies: Bash/Shell, Python, Terraform, Kubernetes, OracleDB, YAML, SaltStack, Splunk, Zabbix, AWS</p>
+                    <p>Medicaid and Medicare Services management system focused on streamlining and improving healthcare services delivery.</p>
+                </article>
 
-    <h3>BOP SENTRY Modernization Program (Department of Justice)</h3>
-    <p><strong>Role:</strong> Senior Developer</p>
-    <p>Technologies: Next.js, React, RESTful APIs, Apache Maven, Docker, AWS, AWS CloudWatch, Nexus Repository</p>
-    <p>Migrating legacy COBOL-based inmate management system to a modern, cloud-based platform with enhanced data analytics and interoperability.</p>
+                <article class="project" data-category="development government">
+                    <h3>BOP SENTRY Modernization Program (Department of Justice)</h3>
+                    <p><strong>Role:</strong> Senior Developer</p>
+                    <p class="technologies">Technologies: Next.js, React, RESTful APIs, Apache Maven, Docker, AWS, AWS CloudWatch, Nexus Repository</p>
+                    <p>Migrating legacy COBOL-based inmate management system to a modern, cloud-based platform with enhanced data analytics and interoperability.</p>
+                </article>
 
-    <h3>Navy ERP PMW 220 Program (US Department of the Navy)</h3>
-    <p><strong>Role:</strong> Software Developer</p>
-    <p>Technologies: SAP ABAP/HANA, RESTful API, JavaScript, TypeScript, SQL, Worksoft Certify, Java, .NET</p>
-    <p>Modernizing and optimizing financial management, property systems, and human resource management for the Department of Navy through full ERP implementation.</p>
+                <article class="project" data-category="development government">
+                    <h3>Navy ERP PMW 220 Program (US Department of the Navy)</h3>
+                    <p><strong>Role:</strong> Software Developer</p>
+                    <p class="technologies">Technologies: SAP ABAP/HANA, RESTful API, JavaScript, TypeScript, SQL, Worksoft Certify, Java, .NET</p>
+                    <p>Modernizing and optimizing financial management, property systems, and human resource management for the Department of Navy through full ERP implementation.</p>
+                </article>
 
-    <h3>Child Welfare Digital Services (State of California)</h3>
-    <p><strong>Role:</strong> Software Engineer</p>
-    <p>Technologies: UFT, VB6, C#, SharePoint, Azure DevOps</p>
-    <p>Application modernization from VB6 to C# in an agile environment, including automated and manual testing.</p>
+                <article class="project" data-category="development government">
+                    <h3>Child Welfare Digital Services (State of California)</h3>
+                    <p><strong>Role:</strong> Software Engineer</p>
+                    <p class="technologies">Technologies: UFT, VB6, C#, SharePoint, Azure DevOps</p>
+                    <p>Application modernization from VB6 to C# in an agile environment, including automated and manual testing.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-    <p><a href="index.html">Back to home</a></p>
+    <footer>
+        <p><a href="index.html">Back to home</a></p>
+    </footer>
+    
+    <button id="scroll-up" aria-label="Scroll to top">↑</button>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <script src="app.js"></script>
 </body>
 </html>
