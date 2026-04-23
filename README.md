@@ -1,6 +1,6 @@
 # Developer-Portfolio
 
-This is my personal portfolio website, inspired by minimalist designs like Linus Torvalds' site.
+This is my personal portfolio website. Visit beaulieuke.com to check it out.
 
 ## Features
 
