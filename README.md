@@ -1,24 +1,18 @@
 # Developer-Portfolio
 
-This is my personal portfolio website showcasing my skills, projects, and experience as a Software Engineer.
+This is my personal portfolio website, inspired by minimalist designs like Linus Torvalds' site.
 
 ## Features
 
-- Responsive design that works on desktop, tablet, and mobile
-- Dark mode toggle
-- Smooth scrolling navigation
-- Contact form with Formspree integration
-- Project showcase with links to live demos and GitHub repos
-- Animated elements using Animate.css
+- Minimalist design with clean typography
+- Simple HTML and CSS, no frameworks
+- Responsive layout
+- Sections for about, skills, projects, and contact
 
 ## Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript (ES6)
-- IonIcons for icons
-- Animate.css for animations
-- Formspree for contact form handling
 
 ## Setup
 
@@ -37,4 +31,4 @@ This site can be deployed to any static hosting service:
 
 ## License
 
-MIT License - feel free to use this as a template for your own portfolio!
+MIT License
